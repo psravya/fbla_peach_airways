@@ -53,6 +53,98 @@
 		box-sizing: border-box;
 	}
 
+/* Banner */
+
+#banner {
+	padding: 14em 0 12em 0;
+	background-image: url(../../images/sunset.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+	#banner .content {
+		-moz-transition: opacity 1s ease-in-out, -moz-transform 0.75s ease-in-out;
+		-webkit-transition: opacity 1s ease-in-out, -webkit-transform 0.75s ease-in-out;
+		-ms-transition: opacity 1s ease-in-out, -ms-transform 0.75s ease-in-out;
+		transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
+		opacity: 1;
+	}
+
+	#banner h1 {
+		font-size: 3em;
+		color: #25a2c3;
+		line-height: 1em;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+	}
+
+	#banner p {
+		font-size: 1.25em;
+		margin-bottom: 1.75em;
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		#banner {
+			padding: 12em 0 10em 0;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		#banner {
+			padding: 8em 6em 6em 6em;
+		}
+
+			#banner br {
+				display: none;
+			}
+
+			#banner h1 {
+				font-size: 2.25em;
+			}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#banner {
+			padding: 6em 4em 4em 4em;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#banner {
+			padding: 4em 2em 2em 2em;
+		}
+
+			#banner h1 {
+				font-size: 2em;
+			}
+
+			#banner p {
+				font-size: 1em;
+			}
+
+			#banner .button {
+				font-size: .9em;
+			}
+
+	}
+
+	body.is-loading #banner .content {
+		opacity: 0;
+		-moz-transform: translateY(1em);
+		-webkit-transform: translateY(1em);
+		-ms-transform: translateY(1em);
+		transform: translateY(1em);
+	}
+
 /* Containers */
 
 	.container {
@@ -3116,3 +3208,40 @@
 				}
 
 		}
+
+		* {
+			box-sizing: border-box;
+		  }
+		  
+		  #myInput {
+			background-image: url('/css/searchicon.png');
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+			width: 100%;
+			font-size: 16px;
+			padding: 12px 20px 12px 40px;
+			border: 1px solid #ddd;
+			margin-bottom: 12px;
+		  }
+		  
+		  #myTable {
+			border-collapse: collapse;
+			width: 100%;
+			border: 1px solid #ddd;
+			font-size: 18px;
+		  }
+		  
+		  #myTable th, #myTable td {
+			text-align: left;
+			padding: 12px;
+		  }
+		  
+		  #myTable tr {
+			border-bottom: 1px solid #ddd;
+		  }
+		  
+		  #myTable tr.header, #myTable tr:hover {
+			background-color: #f1f1f1;
+		  }
+
+	
