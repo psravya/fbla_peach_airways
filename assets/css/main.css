@@ -3244,4 +3244,7 @@
 			background-color: #f1f1f1;
 		  }
 
-	
+		  .video-fluid {
+			width: 100%;
+			height: auto;
+		  }
