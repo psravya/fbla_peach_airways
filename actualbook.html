@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Schedules</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+<!-- Header -->
+<header id="header">
+	<nav class="left">
+		<a href="#menu"><span>Menu</span></a>
+	</nav>
+	<a href="index.html" class="logo"><img src ="images/peachairwayslogo.png"></a>
+	</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+		<li><a href="book.html">BOOK</a></li>
+		<li><a href="rewards.html">REWARDS</a></li>
+		<li><a href="contact.html">CONTACT US</a></li>
+	</ul>
+	</nav>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<center><h1>BOOK YOUR FLIGHTS HERE.</h1></center><br>
+					<p style="font-size:20px">SEARCH AVALIABLE FLIGHTS:</p>
+					
+					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Departing City.." title="Type in a Location">
+					
+					<table id="myTable">
+					  <tr class="header">
+						<th style="width:10%;">Flight Number</th>
+						<th style="width:10%;">Departing City</th>
+						<th style="width:10%;">Arrival City</th>
+						<th style="width:20%;">Departing Times</th>
+						<th style="width:20%;">Arrival Times</th>
+						<th style="width:50%;">Fares</th>
+						<th style="width:30%;"></th>
+
+					  </tr>
+					  <tr>
+						  <td>PA112</td>
+						<td style="font-size:20px">Atlanta</td>
+						<td style="font-size:20px">Orlando</td>
+						<td>
+							<p style="color:red">6:00 AM</p>
+							<p style="color:blue">5:00 PM</p>
+						</td>
+						<td>
+							<p style="color:red">7:30 AM</p>
+							<p style="color:blue">6:30 PM</p>
+						</td>
+						<td>
+							<p style="font-size:18px">Economy: $160</p>
+							<p style="font-size:18px">Business: $190</p>
+							<p style="font-size:18px">Premium: $250</p>
+						</td>
+						<td><a href="aobook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA181</td>
+							<td style="font-size:20px">Orlando</td>
+							<td style="font-size:20px">Atlanta</td>
+							<td>
+								<p style="color:red">8:00 AM</p>
+								<p style="color:blue">7:00 PM</p>
+							</td>
+							<td>
+								<p style="color:red">9:30 AM</p>
+								<p style="color:blue">8:30 PM</p>
+							</td>
+							<td>
+							<p style="font-size:18px">Economy: $160</p>
+							<p style="font-size:18px">Business: $190</p>
+							<p style="font-size:18px">Premium: $250</p>
+							</td>
+							<td><a href="oabook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA915</td>	
+							<td style="font-size:20px">Atlanta</td>
+							<td style="font-size:20px">Birmingham</td>
+							<td>
+								<p style="color:red">6:30 AM</p>
+								<p style="color:blue">4:00 PM</p>
+							</td>
+							<td>
+								<p style="color:red">7:20 AM</p>
+								<p style="color:blue">4:50 PM</p>
+							</td>
+							<td>
+								<p style="font-size:18px">Economy: $240</p>
+								<p style="font-size:18px">Business: $280</p>
+								<p style="font-size:18px">Premium: $340</p>
+							</td>
+							<td><a href="abbook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA516</td>
+							<td style="font-size:20px">Birmingham</td>
+							<td style="font-size:20px">Atlanta</td>
+							<td>
+								<p style="color:red">8:30 AM</p>
+								<p style="color:blue">6:00 PM</p>
+							</td>
+							<td>
+								<p style="color:red">9:20 AM</p>
+								<p style="color:blue">6:50 PM</p>
+							</td>
+							<td>
+									<p style="font-size:18px">Economy: $240</p>
+									<p style="font-size:18px">Business: $280</p>
+									<p style="font-size:18px">Premium: $340</p>
+							</td>
+							<td><a href="babook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA628</td>
+							<td style="font-size:20px">Atlanta</td>
+							<td style="font-size:20px">Jackson</td>
+							<td>
+								<p style="color:red">7:00 AM</p>
+								<p style="color:blue">6:30 PM</p>
+							</td>
+							<td>
+								<p style="color:red">8:20 AM</p>
+								<p style="color:blue">7:50 PM</p>
+							</td>
+							<td>
+								<p style="font-size:18px">Economy: $150</p>
+								<p style="font-size:18px">Business: $185</p>
+								<p style="font-size:18px">Premium: $250</p>
+							</td>
+							<td><a href="ajbook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA765</td>
+							<td style="font-size:20px">Jackson</td>
+							<td style="font-size:20px">Atlanta</td>
+							<td>
+								<p style="color:red">9:00 AM</p>
+								<p style="color:blue">8:30 PM</p>
+							</td>
+							<td>
+								<p style="color:red">10:20 AM</p>
+								<p style="color:blue">9:50 PM</p>
+							</td>
+							<td>
+									<p style="font-size:18px">Economy: $150</p>
+								<p style="font-size:18px">Business: $185</p>
+								<p style="font-size:18px">Premium: $250</p>
+							</td>
+							<td><a href="jabook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA194</td>
+							<td style="font-size:20px">Atlanta</td>
+							<td style="font-size:20px">Nashville</td>
+							<td>
+								<p style="color:red">7:30 AM</p>
+								<p style="color:blue">6:00 PM</p>
+							</td>
+							<td>
+								<p style="color:red">8:35 AM</p>
+								<p style="color:blue">7:05 PM</p>
+							</td>
+							<td>
+								<p style="font-size:18px">Economy: $98</p>
+								<p style="font-size:18px">Business: $135</p>
+								<p style="font-size:18px">Premium: $190</p>
+							</td>
+							<td><a href="anbook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA972</td>
+							<td style="font-size:20px">Nashville</td>
+							<td style="font-size:20px">Atlanta</td>
+							<td>
+								<p style="color:red">9:30 AM</p>
+								<p style="color:blue">7:30 PM</p>
+							</td>
+							<td>
+								<p style="color:red">10:35 AM</p>
+								<p style="color:blue">8
+									35 PM</p>
+							</td>
+							<td>
+								<p style="font-size:18px">Economy: $98</p>
+								<p style="font-size:18px">Business: $135</p>
+								<p style="font-size:18px">Premium: $190</p>
+							</td>
+							<td><a href="nabook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA379</td>
+						<td style="font-size:20px">Atlanta</td>
+						<td style="font-size:20px">Columbia</td>
+						<td>
+							<p style="color:red">8:15 AM</p>
+							<p style="color:blue">2:00 PM</p>
+						</td>
+						<td>
+							<p style="color:red">9:10 AM</p>
+							<p style="color:blue">2:55 PM</p>
+						</td>
+						<td>
+								<p style="font-size:18px">Economy: $130</p>
+								<p style="font-size:18px">Business: $170</p>
+								<p style="font-size:18px">Premium: $215</p>
+						</td>
+						<td><a href="acbook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA254</td>
+						<td style="font-size:20px">Columbia</td>
+						<td style="font-size:20px">Atlanta</td>
+						<td>
+							<p style="color:red">10:00 AM</p>
+							<p style="color:blue">6:00 PM</p>
+						</td>
+						<td>
+							<p style="color:red">10:55 AM</p>
+							<p style="color:blue">6:55 PM</p>
+						</td>
+						<td>
+								<p style="font-size:18px">Economy: $130</p>
+								<p style="font-size:18px">Business: $170</p>
+								<p style="font-size:18px">Premium: $215</p>
+						</td>
+						<td><a href="cabook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA982</td>
+						<td style="font-size:20px">Atlanta</td>
+						<td style="font-size:20px">Raleigh</td>
+						<td>
+							<p style="color:red">8:30 AM</p>
+							<p style="color:blue">3:00 PM</p>
+						</td>
+						<td>
+							<p style="color:red">9:50 AM</p>
+							<p style="color:blue">4:20 PM</p>
+						</td>
+						<td>
+								<p style="font-size:18px">Economy: $98</p>
+								<p style="font-size:18px">Business: $140</p>
+								<p style="font-size:18px">Premium: $205</p>
+						</td>
+						<td><a href="arbook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA093</td>
+						<td style="font-size:20px">Raleigh</td>
+						<td style="font-size:20px">Atlanta</td>
+						<td>
+							<p style="color:red">10:30 AM</p>
+							<p style="color:blue">9:15 PM</p>
+						</td>
+						<td>
+							<p style="color:red">11:50 AM</p>
+							<p style="color:blue">10:35 PM</p>
+						</td>
+						<td>
+								<p style="font-size:18px">Economy: $98</p>
+								<p style="font-size:18px">Business: $140</p>
+								<p style="font-size:18px">Premium: $205</p>
+						</td>
+						<td><a href="rabook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA482</td>
+						<td style="font-size:20px">Atlanta</td>
+						<td style="font-size:20px">Richmond</td>
+						<td>
+							<p style="color:red">9:00 AM</p>
+							<p style="color:blue">1:00 PM</p>
+						</td>
+						<td>
+							<p style="color:red">10:30 AM</p>
+							<p style="color:blue">2:30 PM</p>
+						</td>
+						<td>
+								<p style="font-size:18px">Economy: $110</p>
+								<p style="font-size:18px">Business: $145</p>
+								<p style="font-size:18px">Premium: $225</p>
+						</td>
+						<td><a href="aribook.html" class="button small">Book Now</a></td>
+					  </tr>
+					  <tr>
+							<td>PA654</td>
+						<td style="font-size:20px">Richmond</td>
+						<td style="font-size:20px">Atlanta</td>
+						<td>
+							<p style="color:red">11:00 AM</p>
+							<p style="color:blue">3:30 PM</p>
+						</td>
+						<td>
+							<p style="color:red">12:30 PM</p>
+							<p style="color:blue">5:00 PM</p>
+						</td>
+						<td>
+								<p style="font-size:18px">Economy: $110</p>
+								<p style="font-size:18px">Business: $145</p>
+								<p style="font-size:18px">Premium: $225</p>
+						</td>
+						<td><a href="riabook.html" class="button small">Book Now</a></td>
+					  </tr>
+					</table>
+
+		
+					
+					<script>
+					function myFunction() {
+					  var input, filter, table, tr, td, i, txtValue;
+					  input = document.getElementById("myInput");
+					  filter = input.value.toUpperCase();
+					  table = document.getElementById("myTable");
+					  tr = table.getElementsByTagName("tr");
+					  for (i = 0; i < tr.length; i++) {
+						td = tr[i].getElementsByTagName("td")[0];
+						if (td) {
+						  txtValue = td.textContent || td.innerText;
+						  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							tr[i].style.display = "";
+						  } else {
+							tr[i].style.display = "none";
+						  }
+						}       
+					  }
+					}
+					</script>
+				
+</div>
+</section>
+
+				<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<h2>Get In Touch</h2>
+			<ul class="icons">
+					<li><a href="https://twitter.com/peachairways1" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/peach.airways" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/peachairways/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+				<p style="font-size:18px">©2019 SRAVYA PASPUNOORI & ISRA NAWEED </p>
+		   </div>
+	</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
