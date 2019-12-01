@@ -27,11 +27,49 @@
 	</ul>
 	</nav>
 
+
+	
 <!-- Banner -->
 <section id="banner">
 		<div class="content">
-			<h1>WELCOME TO PEACH AIRWAYS</h1>
-			<p style="font-size: 30px">FLY SAFE. FLY SMART. </p>
+				<h1 class="ml14">
+						<span class="text-wrapper">
+						  <span class="letters">WELCOME TO PEACH AIRWAYS</span>
+						  <span class="line"></span>
+						</span>
+					  </h1>
+					  
+					  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+					  <script>
+					 var textWrapper = document.querySelector('.ml14 .letters');
+					textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+						anime.timeline({loop: true})
+						.add({
+							targets: '.ml14 .line',
+							scaleX: [0,1],
+							opacity: [0.5,1],
+							easing: "easeInOutExpo",
+							duration: 900
+						}).add({
+							targets: '.ml14 .letter',
+							opacity: [0,1],
+							translateX: [40,0],
+							translateZ: 0,
+							scaleX: [0.3, 1],
+							easing: "easeOutExpo",
+							duration: 800,
+							offset: '-=600',
+							delay: (el, i) => 150 + 25 * i
+						}).add({
+							targets: '.ml14',
+							opacity: 0,
+							duration: 1000,
+							easing: "easeOutExpo",
+							delay: 1000
+						}); 
+					  </script>
+					  
 				</div>
 	</section>
 
@@ -39,7 +77,31 @@
 			<section id="one" class="wrapper">
 		
 				<center>
-				<h1> WHY CHOOSE PEACH AIRWAYS?</h1>
+						<h1 class="ml12">WHY CHOOSE PEACH AIRWAYS</h1>
+
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+						<script>
+						var textWrapper = document.querySelector('.ml12');
+						textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+						anime.timeline({loop: true})
+						.add({
+							targets: '.ml12 .letter',
+							translateX: [40,0],
+							translateZ: 0,
+							opacity: [0,1],
+							easing: "easeOutExpo",
+							duration: 1200,
+							delay: (el, i) => 500 + 30 * i
+						}).add({
+							targets: '.ml12 .letter',
+							translateX: [0,-30],
+							opacity: [1,0],
+							easing: "easeInExpo",
+							duration: 1100,
+							delay: (el, i) => 100 + 30 * i
+						});
+						</script>
 				</center>
 				<div class="inner flex flex-3">
 					<div class="flex-item left">
@@ -88,7 +150,28 @@
 		<!-- Three -->
 			<section id="three" class="wrapper">
 				<center>
-				<h1 style="color: #f6755e">ENVIRONMENTAL BENEFITS</h1>
+						<h1 class="ml16">ENVIRONMENTAL BENEFITS</h1>
+						<script>
+						var textWrapper = document.querySelector('.ml16');
+						textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+						anime.timeline({loop: true})
+						.add({
+							targets: '.ml16 .letter',
+							translateY: [-100,0],
+							easing: "easeOutExpo",
+							duration: 1400,
+							delay: (el, i) => 30 * i
+						}).add({
+							targets: '.ml16',
+							opacity: 0,
+							duration: 1000,
+							easing: "easeOutExpo",
+							delay: 1000
+						});
+												</script>
+
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 				</center>
 				<div class="inner flex flex-3">
 					<div class="flex-item box">
@@ -136,6 +219,7 @@
 		</div>
 		<div class="copyright">
 				<p style="font-size:18px">©2019 SRAVYA PASPUNOORI & ISRA NAWEED </p>
+				<p style="font-size: 10px;">Disclaimer: All images were used from Google free-to-use images and belong to original creators.</p>
 		   </div>
 	</footer>
 
