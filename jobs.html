@@ -34,8 +34,33 @@
 	<section id="main" class="wrapper">
 			<div class="inner">
 				<header class="align-left">
-					
-					<h1 style = "font-size:30px">CAREER OPPORTUNITIES: <b>WELCOME ABOARD </b></h1>
+					<center>
+						<h1 class="ml12"> EXPLORE CAREER OPPORTUNITIES</h1>
+					</center>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+						<script>
+						var textWrapper = document.querySelector('.ml12');
+						textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+						anime.timeline({loop: true})
+						.add({
+							targets: '.ml12 .letter',
+							translateX: [40,0],
+							translateZ: 0,
+							opacity: [0,1],
+							easing: "easeOutExpo",
+							duration: 1200,
+							delay: (el, i) => 500 + 30 * i
+						}).add({
+							targets: '.ml12 .letter',
+							translateX: [0,-30],
+							opacity: [1,0],
+							easing: "easeInExpo",
+							duration: 1100,
+							delay: (el, i) => 100 + 30 * i
+						});
+						</script>
 					               
 		<p style="font-size:20px">We are committed to provide our Employees a stable work environment with equal 
 			opportunity for learning and personal growth. Creativity and innovation are encouraged for improving 
@@ -188,8 +213,10 @@
 
 			</div>
 			<br>
-			<center><a href="applications.html" class="button special">APPLY HERE</a></center>	
-			<hr class="major" />
+			<center><a href="jobapp.html" class="button special">APPLY HERE</a></center>	
+
+
+				<hr class="major" />
 				</div>
 				</section>
 
@@ -208,8 +235,9 @@
 					</ul>
 				</div>
 				<div class="copyright">
-						<p style="font-size:18px">©2019 SRAVYA PASPUNOORI & ISRA NAWEED </p>
-				   </div>
+					<p style="font-size:18px">©2019 SRAVYA PASPUNOORI & ISRA NAWEED </p>
+					<p style="font-size: 10px;">Disclaimer: All images were used from Google free-to-use images and belong to original creators.</p>
+			   </div>
 			</footer>
 
 		<!-- Scripts -->
