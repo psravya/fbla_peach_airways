@@ -31,9 +31,34 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>ABOUT RAPID REWARDS</h1>
-					</header>
+							<h1 class="ml13">ABOUT RAPID REWARDS</h1>
 
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+							
+							<script>
+							var textWrapper = document.querySelector('.ml13');
+							textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+							anime.timeline({loop: true})
+							.add({
+								targets: '.ml13 .letter',
+								translateY: [100,0],
+								translateZ: 0,
+								opacity: [0,1],
+								easing: "easeOutExpo",
+								duration: 1400,
+								delay: (el, i) => 300 + 30 * i
+							}).add({
+								targets: '.ml13 .letter',
+								translateY: [0,-100],
+								opacity: [1,0],
+								easing: "easeInExpo",
+								duration: 1200,
+								delay: (el, i) => 100 + 30 * i
+							});
+							</script>
+					</header>
+<BR>
 					<h2>Why Join?</h2>
 									<p style="font-size:19px"><span class="image left"><img src="images/promo.jpg" alt="" /></span>
 										As a Rapid Rewards Member, you earn points by flying or spending 
@@ -77,7 +102,31 @@
 		</div>
 	</section>
 
-	<h2 id="content">How to Earn Points</h2>
+	<h1 class="ml12">HOW TO EARN POINTS</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+</script>
 	<p style="font-size:18px"><span class="image right"><img src="images/points.png" alt="" /></span>
 		With the Rapid Rewards program, you'll be earning rewards fast. Whether you're flying, 
 		staying at your favorite hotel, or simply grabbing a bite to eat, you'll earn points 
@@ -93,20 +142,23 @@
 				</div>
 			</section>
 
+
+
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<h2>Get In Touch</h2>
-					<ul class="actions">
-						<li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li>
-						<li><span class="icon fa-envelope"></span> <a href="#">information@untitled.tld</a></li>
-						<li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>
-					</ul>
-				</div>
-				<div class="copyright">
-						©2019 SRAVYA PASPUNOORI & ISRA NAWEED 
-				   </div>
-			</footer>
+		<footer id="footer">
+			<div class="inner">
+				<h2>Get In Touch</h2>
+				<ul class="icons">
+						<li><a href="https://twitter.com/peachairways1" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/peach.airways" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/peachairways/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<p style="font-size:18px">©2019 SRAVYA PASPUNOORI & ISRA NAWEED </p>
+				<p style="font-size: 10px;">Disclaimer: All images were used from Google free-to-use images and belong to original creators.</p>
+		   </div>
+		</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
