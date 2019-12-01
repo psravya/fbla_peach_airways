@@ -1,13 +1,12 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
-		<title>About</title>
+		<title>PEACH AIRWAYS</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="subpage">
+	<body>
 
 <!-- Header -->
 <header id="header">
@@ -28,14 +27,34 @@
 	</ul>
 	</nav>
 
-		<!-- Main -->
+	<!-- Main -->
 		<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-left">
 						<center>
-						<h1 style="font-size:50px">ABOUT US</h1>
-						
-					</center>
+                                <h1 class="ml16">ABOUT US</h1>
+
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                        <script>
+                        var textWrapper = document.querySelector('.ml16');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                        anime.timeline({loop: true})
+                        .add({
+                            targets: '.ml16 .letter',
+                            translateY: [-100,0],
+                            easing: "easeOutExpo",
+                            duration: 1400,
+                            delay: (el, i) => 30 * i
+                        }).add({
+                            targets: '.ml16',
+                            opacity: 0,
+                            duration: 1000,
+                            easing: "easeOutExpo",
+                            delay: 1000
+                        });
+                        </script>
+                    </center>
 					</header>
 					<div class="image fit">
 						<img src="images/mission.jpg" alt="" />
@@ -52,6 +71,11 @@
 					 
 					</center>
 					<hr class="major" />
+					
+					<center>
+					<h2>Interested in Working With Us? </h2>
+					<a href="jobs.html" class="button">Click Here!</a>
+					</center>
                     
 				</div>
 				</section>
@@ -71,16 +95,39 @@
 							<div class="inner">
 								<header class="align-left">	
 					<hr class="major" />
-					<center><h2>GREEN'S WARM WELCOME</h2></center>
+					<center>
+                            <h2 class="ml9">
+                                    <span class="text-wrapper">
+                                      <span class="letters">GREEN'S WARM <BR> WELCOME</span>
+                                    </span>
+                                  </h2>
+                                  
+                                  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                                  <script>
+                                  var textWrapper = document.querySelector('.ml9 .letters');
+                                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                                    anime.timeline({loop: true})
+                                    .add({
+                                        targets: '.ml9 .letter',
+                                        scale: [0, 1],
+                                        duration: 1500,
+                                        elasticity: 600,
+                                        delay: (el, i) => 45 * (i+1)
+                                    }).add({
+                                        targets: '.ml9',
+                                        opacity: 0,
+                                        duration: 1000,
+                                        easing: "easeOutExpo",
+                                        delay: 1000
+                                    });
+                                  </script>
+                    </center>
 					<p style ="font-size:20px"><span class="image right"><img src="images/slogan.png" alt="" /></span>What started as a dream that we once thought would be out of reach has now grown into one of Georgia's largest domestic airlines, helping more than 8 million travelers get to the places they want to go to each year. We offer the best prices with five star service, and make sure you are in comfort at all times.</p>
 					<p style="font-size:20px"></span>We don't take our commitments lightly. We are dedicated to doing the right thing, we take great strides to ensure your safety, and fostering trusting relationships between our Employees, our Customer, our Suppliers, and our Planet.</p>
 							
 
-					<hr class="major" />
-					<center>
-					<h2>Interested in Working With Us? </h2>
-					<a href="jobs.html" class="button">Click Here!</a>
-					</center>
+					
 								</div>	</div>
 			</section>
 
@@ -99,8 +146,9 @@
 					</ul>
 				</div>
 				<div class="copyright">
-						<p style="font-size:18px">©2019 SRAVYA PASPUNOORI & ISRA NAWEED </p>
-				   </div>
+					<p style="font-size:18px">©2019 SRAVYA PASPUNOORI & ISRA NAWEED </p>
+					<p style="font-size: 10px;">Disclaimer: All images were used from Google free-to-use images and belong to original creators.</p>
+			   </div>
 			</footer>
 
 		<!-- Scripts -->
