@@ -26,9 +26,65 @@
 		<li><a href="contact.html">CONTACT US</a></li>
 	</ul>
 	</nav>
-<center>
-<script src='https://forms.pabbly.com/embed/Cvbc-426085?w=650'></script>
-</center>
+	
+	<link href="picker-light-pop.css" rel="stylesheet">
+    <script src="datepicker-pop.js"></script>
+    <style>
+      html, body { font-family: arial; }
+    </style>
+  </head>
+  <body>
+
+		<section id="main" class="wrapper">
+				<div class="inner">
+					<center>
+						<h4 class="ml16">START YOUR
+							 JOURNEY HERE.</h4></center>
+
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                        <script>
+                        var textWrapper = document.querySelector('.ml16');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                        anime.timeline({loop: true})
+                        .add({
+                            targets: '.ml16 .letter',
+                            translateY: [-100,0],
+                            easing: "easeOutExpo",
+                            duration: 1400,
+                            delay: (el, i) => 30 * i
+                        }).add({
+                            targets: '.ml16',
+                            opacity: 0,
+                            duration: 1000,
+                            easing: "easeOutExpo",
+                            delay: 1000
+                        });
+                        </script>
+	  <center>
+  <br>
+  <div class="4u 12u$(medium)">
+		<h3>CHOOSE YOUR DATES</h3>
+		</div>
+			<form action="/action_page.php">
+				Departure Date:
+				<input type="date" name="bday">
+				
+			  </form>
+<br>
+<form action="/action_page.php">
+	Arrival Date:        
+	<input type="date" name="bday">
+
+  </form>
+			  </center>
+			  <br>
+			  <center><a href="actualbook.html" class="button special">SUBMIT</a></center>
+
+</div>
+</section>
+</body>
+
 
 		<!-- Footer -->
 		<footer id="footer">
